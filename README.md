@@ -2,7 +2,7 @@
 Dynamic PDF Generation of E-Commerce Documents Project
 This file is dedicated to explain how to deploy the two cloud functions as well as to push the docker image to artifact registry.
 
-To use the main cloud function, in folder CloudFunction1:
+To use the main cloud function, use file function-new-9.js:
 1. create a new gen 1 firestore trigger upon create google cloud function.
 2. use a service account that is not the default one, so you may have to make a new one.
 3. give that service account the cloud invoker permission and cloud functions admin if needed.
@@ -10,7 +10,7 @@ To use the main cloud function, in folder CloudFunction1:
 5. write the version given by command cat package.json into the package.json file of the cloud function package.json file.
 6. Run!
 
-To use the sendgrid cloud function, in folder CloudFunction2:
+To use the sendgrid cloud function, use file sendgridpart.js:
 1. create a new gen 1 http request triggered google cloud function.
 2. Use previous step 2. from above.
 3. Use previous step 3. from above.
